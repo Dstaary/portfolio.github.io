@@ -1,0 +1,83 @@
+body, html {
+    height: 100%;
+    color: white;
+}
+
+.container {
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* nav header slogan*/
+
+.navbar img { 
+    max-width: 100%;
+    height: auto;
+}
+
+.home-section h1 {
+    font-size: 4rem;
+    padding: 5px 0;
+}
+
+.home-section h3 {
+    font-size: 2em;
+    color: #0072ce;
+    padding: 5px 0;
+}
+
+.home-section {
+    height: 100%;
+}
+
+.slogan {
+    padding: 300px 0;
+}
+
+@media only screen and (max-width: 500px) {
+    .home-section h1 {
+        font-size: 3rem;
+        padding: 5px 0;
+    }
+
+    .home-section h3 {
+        font-size: 1.5em;
+        color: #0072ce;
+        padding: 5px 0;
+    }
+    
+}
+
+/* front-end article */
+
+.front-title h1 {
+    color: #0072ce;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+}
+
+.row img {
+    max-width: 100%;
+    height: auto;
+    float: right;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .front-title h1 {
+        color: #0072ce;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 40px;
+    }
+    
+    .jumbotron img {
+        display: flex;
+        max-height: 100%;
+        float: right;
+    }
+
+}
+
+/* niebieski - #0072ce
+
