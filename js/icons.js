@@ -12,4 +12,4 @@ function zmien() {
 
 setInterval("zmien()", 1000);
 
-const obrazki = new Array("img/adobreAi.png", "img/adobrePS.png", "img/css3.png", "img/html5.png", "img/java.png", "img/bootstrap.png");
+const obrazki = new Array("img/ai.svg", "img/bootstrap.svg", "img/css.svg", "img/html.svg", "img/js.svg", "img/ps.svg");
