@@ -4,11 +4,40 @@ body, html {
 }
 
 .container {
-    height: 100%;
+    height: auto;
     margin: 0 auto;
 }
 
+
+/* link hover */
+.link {
+    display: inline-block;
+    color: #0072ce;
+    text-decoration: none;
+}
+
+.link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0072ce;
+    transition: width .3s;
+    text-decoration: none;
+}
+
+.link:hover::after {
+    width: 100%;
+    text-decoration: none;
+}
+
 /* nav header slogan*/
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
 
 .navbar img { 
     max-width: 100%;
@@ -21,7 +50,7 @@ body, html {
 }
 
 .home-section h3 {
-    font-size: 2em;
+    font-size: 3em;
     color: #0072ce;
     padding: 5px 0;
 }
@@ -32,6 +61,54 @@ body, html {
 
 .slogan {
     padding: 300px 0;
+}
+
+
+
+/* typer cursor */
+
+
+ .typewriter:after {
+    border-right: 0.08em solid #0072ce;
+    animation: caret_typewriter 1s steps(1) infinite;
+    content: "";
+}
+@-webkit-keyframes{
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes caret_typewriter {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* typer cursor 
+.typed-cursor:after{
+    opacity: 1;
+    }
+.typed-cursor.typed-cursor--blink:after{
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+    }
+@keyframes typedjsBlink{
+    50% { opacity: 0.0; }
+    }
+@-webkit-keyframes typedjsBlink{
+    0% { opacity: 1; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1; }
+    }
+
+*/
+
+@media only screen and (max-width: 1440px) {
+    .navbg {
+        background: rgb(52, 58, 64, 0.8);
+    }
+    
 }
 
 @media only screen and (max-width: 500px) {
@@ -48,6 +125,26 @@ body, html {
     
 }
 
+
+
+.project-pic img {
+    max-width: 100%;
+    height: auto;
+    float: right;
+    
+    /*filter: blur(0px);*/
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.project-pic img:hover {
+    /*filter: blur(2px);*/
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px rgba(0,0,0,0.3);
+}
+
 /* front-end article */
 
 .front-title h1 {
@@ -56,11 +153,52 @@ body, html {
     font-size: 50px;
 }
 
-.row img {
+.gallery-pic img {
     max-width: 100%;
     height: auto;
     float: right;
+    
+    /*filter: blur(0px);*/
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 }
+
+.gallery-pic img:hover {
+    /*filter: blur(2px);*/
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px rgba(0,0,0,0.3);
+}
+
+.web-box {
+    color: #bdbdbd;
+}
+
+.web-box h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+
+.gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px rgba(0,0,0,0.3);
+}
+
+.gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
 
 
 
@@ -76,7 +214,51 @@ body, html {
         max-height: 100%;
         float: right;
     }
+    .location-title {
+        opacity: 1;
+      }
+      .location-image img {
+        filter: blur(2px);
+      }
 
+}
+
+
+.about-section {
+    padding-top: 100px;
+    height: auto;
+}
+
+.about-text {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #bdbdbd;
+}
+
+.icons {
+    color: #0072ce;
+}
+
+.experience p{
+    font-size: 18px;
+    font-family: 'Bebas Neue', cursive;
+    color: #bdbdbd;
+    
+}
+
+.years {
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    color: #0072ce;
+    user-select: none;
+}
+
+flooter p {
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    color: #bdbdbd;
 }
 
 /* niebieski - #0072ce
