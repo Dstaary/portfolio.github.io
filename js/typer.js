@@ -1,5 +1,5 @@
 (function($) {
-	var aiMsg = ["Front-end Developerem", "Graphic Designerem", "Freelancerem"];
+	var aiMsg = ["Front-end Developerem", "DTP Designerem", "Freelancerem"];
 
 	$(document).ready(function() {
 		var inputAI = $("#typer");
