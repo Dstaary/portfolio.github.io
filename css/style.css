@@ -11,13 +11,14 @@ body, html {
 .container {
     height: auto;
     margin: 0 auto;
+    width: 100%;
 }
+
 
 /* link hover */
 .link {
     display: inline-block;
     color: #0072ce;
-    text-decoration: none;
 }
 
 .link::after {
@@ -27,12 +28,15 @@ body, html {
     height: 2px;
     background: #0072ce;
     transition: width .3s;
-    text-decoration: none;
 }
 
 .link:hover::after {
     width: 100%;
+}
+
+.link:hover {
     text-decoration: none;
+    color: #0072ce;
 }
 
 /* nav header slogan*/
@@ -49,8 +53,9 @@ body, html {
 }
 
 .home-section h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     padding: 5px 0;
+    color: #bdbdbd;
 }
 
 .home-section h3 {
@@ -64,7 +69,7 @@ body, html {
 }
 
 .slogan {
-    padding: 300px 0;
+    padding: 370px 0;
 }
 
 
@@ -258,12 +263,30 @@ body, html {
     user-select: none;
 }
 
-flooter p {
+footer p {
     font-size: 18px;
     margin: 0;
     font-family: 'Bebas Neue', cursive;
     color: #bdbdbd;
 }
+
+/* contact-section */
+
+.contact-section {
+    padding: 100px 0;
+    background: #221f1f;
+}
+
+.adress {
+    font-family: 'Bebas Neue', cursive;
+    color: #bdbdbd;
+}
+
+
+
+
+
+
 
 /* niebieski - #0072ce
 
