@@ -19,6 +19,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/smothscroll.js"></script>
         <script src="js/icons.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
        
         </META>
     </head>
@@ -69,9 +70,9 @@
         </div>
     </header>
     
-    <section class="home-section  text-light" id="home">
+    <section class="home-section text-light" id="home">
         <div class="container text-center">
-            <div class="slogan">
+            <div class="slogan animation">
                 <h1 >Witaj, <span class="font-weight-light">jestem</span></h1>
                 
                 <span id="typer"></span>
@@ -82,23 +83,23 @@
     
     <article id="front" class="py-5">
         <div class="container text-light">
-            <div class="front-title text-uppercase">
+            <div class="front-title text-uppercase animation">
                 <h1>Projekty Front-end Dev</h1>
             </div>
         
-        <div class="row py-4  project-pic">
+            <div class="row py-4  project-pic animation">
             <a href="https://dstaary.github.io/portfolio.github.io/"
                class="col-md px-5 d-flex align-items-center" target="_blank" >
-                <img src="https://i.imgur.com/cnLFCF2.png" alt="" class="lightbox">
+                <img src="img/portfolio.png" alt="" class="lightbox">
             </a>
-            <div class="col-md py-3">
+            <div class="col-md py-3 animation">
                 <h1 class="display-4">Portfolio</h1>
                 <p class="lead py-4">Strona z moim portfolio wykonana za pomocą HTML, CSS, Bootstrap oraz JS.</p>
                 <div class="row d-flex py-3">
-                    <div class="d-flex px-3">
+                    <div class="d-flex px-3 animation">
                         <a class="text-primary link" target="_blank" href="https://github.com/Dstaary/portfolio.github.io" role="button" ><i class="fab fa-github"></i> GitHub</a>
                     </div>
-                    <div class="d-flex px-3">
+                    <div class="d-flex px-3 animation">
                         <a class="text-primary link" target="_blank"
                         href="https://dstaary.github.io/portfolio.github.io/" role="button" ><i class="fas fa-globe"></i> Online</a>
                     </div>
@@ -127,102 +128,117 @@
         </div>
     </article>
     
-    <article class="py-5" id="graphic">
+        <article class="py-5 headline" id="graphic">
         <div class="container text-light ">
-            <div class="front-title text-uppercase ">
+            <div class="front-title text-uppercase animation">
                 <h1>Projekty Graphiic Design</h1>
             </div>
             
-            <div class="gallery py-5">
-
-                <div class="row gallery-pic">
-
-                      <div class="col-sm-4 px-4">
-                          <a href="https://i.imgur.com/syLsT05.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/syLsT05.jpg" 
-                                   class="img-fluid">
+            
+            <div class="row justify-content-center animation py-3">
+                <div class="px-2 py-2">
+                    <button class="btn btn-primary" id="all-btn" >Wszystko</button>
+                </div>
+                <div class="px-2 py-2">
+                    <button class="btn btn-primary" id="logo-btn">Loga</button>
+                </div>
+                <div class="px-2 py-2">
+                    <button class="btn btn-primary" id="poster-btn" >Plakaty</button>
+                </div>
+                <div class="px-2 py-2">
+                    <button class="btn btn-primary" id="visiting-card-btn" >Wizytówki</button>
+                </div>
+                <div class="px-2 py-2">
+                    <button class="btn btn-primary" id="leaflet-btn">Ulotki</button>
+                </div>
+                <div class="px-2 py-2">
+                    <button class="btn btn-primary" id="others-btn">Inne</button>
+                </div>
+            </div>
+            
+            
+            <div class="py-5 animation" > 
+                <div class="gallery-pic animation gallery" id="gallery">
+                    <div class="col-sm-4 pic-box" id="gallery-other">
+                          <a href="https://i.imgur.com/syLsT05.jpg" data-size="1600x1067" class="lightbox" >
+                              <img src="https://i.imgur.com/syLsT05.jpg">
                             </a>
                       </div>
-                      <div class="col-sm-4 px-4">
-                          <a href="https://i.imgur.com/Qj4NXHD.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/Qj4NXHD.jpg" 
-                                   class="img-fluid">
-                              
+                    <div class="col-sm-4 pic-box" id="gallery-card">
+                            <a href="https://i.imgur.com/K42u2BN.jpg" data-size="1600x1067" class="lightbox">
+                                <img src="https://i.imgur.com/K42u2BN.jpg">
                             </a>
-                      </div>
-                      <div class="col-sm-4 px-4">
+                    </div>
+                    
+                    <div class="col-sm-4 pic-box" id="gallery-other">
                           <a href="https://i.imgur.com/v8HChyX.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/v8HChyX.jpg" 
-                                   class="img-fluid">
+                              <img src="https://i.imgur.com/v8HChyX.jpg">
                             </a>
                       </div>
-                      <div class="col-sm-4 px-4">
+                    <span id="show"></span>
+                    <div class="col-sm-4 pic-box" id="gallery-leaflet">
                           <a href="https://i.imgur.com/PlbPlWH.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/PlbPlWH.jpg" 
-                                   class="img-fluid">
+                              <img src="https://i.imgur.com/PlbPlWH.jpg" >
                             </a>
                       </div>
-                      <div class="col-sm-4 px-4">
-                          <a href="https://i.imgur.com/K42u2BN.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/K42u2BN.jpg" 
-                                class="img-fluid">
-                            </a>
+                    <div class="col-sm-4 pic-box" id="gallery-poster">
+                        <a href="https://i.imgur.com/Qj4NXHD.jpg" data-size="1600x1067" class="lightbox">
+                            <img src="https://i.imgur.com/Qj4NXHD.jpg">
+                        </a>
                       </div>
-                      <div class="col-sm-4 px-4">
+                    <div class="col-sm-4 pic-box" id="gallery-card">
                           <a href="https://i.imgur.com/vdlYRV0.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/vdlYRV0.jpg" 
-                                class="img-fluid">
-                            </a>
-                      </div>
-                      <div class="col-sm-4 px-4">
-                          <a href="https://i.imgur.com/bQJfgHp.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/bQJfgHp.jpg"  
-                                 class="img-fluid">
-                            </a>
-                      </div>
-                      <div class="col-sm-4 px-4">
-                          <a href="https://i.imgur.com/07dflI9.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/07dflI9.jpg" 
-                                class="img-fluid">
-                            </a>
-                      </div>
-                      <div class="col-sm-4 px-4">
-                          <a href="https://i.imgur.com/77SEs7i.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/77SEs7i.jpg" 
-                                class="img-fluid">
-                            </a>
-                      </div>
-                      <div class="col-sm-4 px-4">
-                          <a href="https://i.imgur.com/KYy74BQ.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/KYy74BQ.jpg" 
-                                class="img-fluid">
-                            </a>
-                      </div>
-                      <div class="col-sm-4 px-4">
-                          <a href="https://i.imgur.com/1XO5WyD.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/1XO5WyD.jpg" 
-                                class="img-fluid">
-                            </a>
-                      </div>
-                      <div class="col-sm-4 px-4">
-                          <a href="https://i.imgur.com/rsfV1p3.png" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/rsfV1p3.png" 
-                                class="img-fluid">
+                              <img src="https://i.imgur.com/vdlYRV0.jpg">
                             </a>
                       </div>
                     
+                    <div class="col-sm-4 pic-box" id="gallery-card">
+                          <a href="https://i.imgur.com/bQJfgHp.jpg" data-size="1600x1067" class="lightbox">
+                              <img src="https://i.imgur.com/bQJfgHp.jpg">
+                            </a>
+                      </div>
+                    <div class="col-sm-4 pic-box" id="gallery-card">
+                          <a href="https://i.imgur.com/07dflI9.jpg" data-size="1600x1067" class="lightbox">
+                              <img src="https://i.imgur.com/07dflI9.jpg">
+                            </a>
+                      </div>
+                    <div class="col-sm-4 pic-box" id="gallery-card">
+                          <a href="https://i.imgur.com/77SEs7i.jpg" data-size="1600x1067" class="lightbox">
+                              <img src="https://i.imgur.com/77SEs7i.jpg">
+                            </a>
+                      </div>
+                    <div class="col-sm-4 pic-box" id="gallery-poster">
+                          <a href="https://i.imgur.com/KYy74BQ.jpg" data-size="1600x1067" class="lightbox">
+                              <img src="https://i.imgur.com/KYy74BQ.jpg">
+                            </a>
+                      </div>
+                    <div class="col-sm-4 pic-box" id="gallery-leaflet">
+                          <a href="https://i.imgur.com/1XO5WyD.jpg" data-size="1600x1067" class="lightbox">
+                              <img src="https://i.imgur.com/1XO5WyD.jpg">
+                            </a>
+                      </div>
+                    <div class="col-sm-4 pic-box" id="gallery-logo">
+                          <a href="https://i.imgur.com/rsfV1p3.png" data-size="1600x1067" class="lightbox">
+                              <img src="https://i.imgur.com/rsfV1p3.png">
+                            </a>
+                      </div>
+         
               </div>
+             
+            </div>
+            <div class="animation text-center">
+                <a href="#show"><span class="show-more" id="show-more">Pokaż wiecej</span></a>
             </div>
             </div>
         </article>
     
         <article class="about-section" id="about">
-            <div class="container text-light ">
-                <div class="front-title text-uppercase ">
+            <div class="container text-light animation">
+                <div class="front-title text-uppercase animation">
                     <h1>O mnie</h1>
                 </div>
             
-                <p class="about-text">Przede wszystkim - jestem <b>Front-End Developer</b>, a także <b>Grafik komputerowy</b>.
+                <p class="about-text animation">Przede wszystkim - jestem <b>Front-End Developer</b>, a także <b>Grafik komputerowy</b>.
                 Ponadto, posługuję się <b>językiem angielskim</b> na poziomie podstawowym w mowie i piśmie.
                 Biegle posługuję się programami <b>Adobe Photoshop</b>,  <b>Adobe Illustrator</b>. 
                 Pracowałem na różnych systemach operacyjnych, obecnie pozostając wierny Win 10.
@@ -230,16 +246,16 @@
                  W ostatnim czasie posiadłem umiejętność pracy z  <b>Bootstrapem</b> i  <b>JavaScript</b>.
                 Jeżeli masz pytania lub chcesz nawiązać współpracę zapraszam do <a href="#contact" class="link" >kontaktu</a>.</p>
             
-                <div class="row justify-content-center experience">
-                    <div class="col-sm-2 py-4 text-center">
+                <div class="row justify-content-center experience animation">
+                    <div class="col-sm-2 py-4 text-center animation">
                         <span class="years"><b>1+</b></span>
                         <p>Lata doświadczenia Front-End Dev</p>
                     </div>
-                     <div class="col-sm-2 py-4 text-center">
+                    <div class="col-sm-2 py-4 text-center animation">
                         <span class="years"><b>10+</b></span>
                         <p>Projektów</p>
                     </div>
-                     <div class="col-sm-3 py-4 text-center icons">
+                    <div class="col-sm-3 py-4 text-center icons animation">
                        
                         <img src="img/ai.svg" alt="" id="change" style="height: 130px;">
                         
@@ -251,11 +267,11 @@
                          -->
                                  
                     </div>
-                     <div class="col-sm-2 py-4 text-center">
+                    <div class="col-sm-2 py-4 text-center animation">
                         <span class="years"><b>3+</b></span>
                         <p>Lata doświadczenia Graphic Design</p>
                     </div>
-                     <div class="col-sm-2 py-4 text-center">
+                    <div class="col-sm-2 py-4 text-center animation">
                         <span class="years"><b>50+</b></span>
                         <p>projektów</p>
                     </div>
@@ -266,59 +282,61 @@
         </article>
         
         
-        <section class="contact-section" id="contact">
+        <section class="contact-section animation" id="contact">
                 <div class="container text-light">
                     <div class="front-title text-uppercase ">
                         <h1>Kontakt</h1>
                     </div>
                     <div class="row d-flex flex-wrap py-3">
-                        <div class="col-md-6">
+                        <div class="col-md-6 animation">
                            
                             <h1 class="text-center adress">Napisz do mnie</h1>
-                       
+                            
+                            
                             <form>
-                                <div class="form-group">
+                                <div class="form-group animation">
                                     <label for="email"></label>
                                     <input  name="email" type="email" class="form-control" id="email" placeholder="E-mail">
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group animation">
                                     <label for="name"></label>
                                     <input name="name" type="name" class="form-control" id="name" placeholder="Name">
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group animation">
                                     <label for="subject"></label>
                                     <input name="subject" type="subject" class="form-control" id="subject" placeholder="subject">
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group animation">
                                     <label for="exampleFormControlTextarea1"></label>
                                     <textarea name="message" class="form-control" id="text" rows="3" placeholder="Wiadomość"></textarea>
                                 </div>
-                                <div class="text-center py-3">
+                                <div class="text-center py-3 animation">
                                     <button class="btn btn-primary" type="submit">Wyślij</button>
                                 </div>
                             </form>
-                                <p class="text-center"><i class="fas fa-envelope"></i>
-                                 Email: <a href="mailto: starobratd@gmail.com" class="link">starobratd@gmail.com</a></p>
+                            <p class="text-center animation"><i class="fas fa-envelope"></i>
+                                    Email: <a href="mailto: starobratd@gmail.com" class="link">starobratd@gmail.com</a></p>
                         </div> 
                         
-                        <div class="col-md-6">
+                        <div class="col-md-6 animation">
                             <div class="align-items-center py-3">
                             <img src="img/mail.svg" alt="" id="change">
                             </div>
                         </div>
+                        
                     </div>
                 </div>
         </section>
         
         
         <footer>
-            <div class="container">            
+            <div class="container animation">            
                     <div class="py-2 text-center">
                        <div class="py-2">
-                            <a href="https://www.facebook.com/Dstary" class="px-1" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                           <a href="https://www.facebook.com/Dstary" class="px-1" target="_blank"><i class="fab fa-facebook-square"></i></a>
 
                            <a href="https://github.com/Dstaary" class="px-1" target="_blank"><i class="fab fa-github"></i></a>
 
@@ -338,9 +356,15 @@
         </script><script>
             baguetteBox.run('.gallery');
         </script>
+        <script>
+            ScrollReveal().reveal('.animation');
+            ScrollReveal().reveal('.animation', { delay: 250 })
+        </script>
 
         <script src="js/icons.js"></script>
         <script src="js/typer.js"></script>
+        <script src="js/show-gallery.js"></script>
+        <script src="js/categories-gallery.js"></script>
     </body>
     
 </html>
