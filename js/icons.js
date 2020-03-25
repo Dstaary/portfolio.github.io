@@ -1,11 +1,11 @@
-let a = 1;
+let icon = 1;
  
 function zmien() {
 	let ile = obrazki.length;
-	document.getElementById("change").src = obrazki[a];	
-	a++;
-	if(ile==a) {
-		a=1;
+    document.getElementById("change").src = obrazki[icon];	
+    icon++;
+    if(ile==icon) {
+        icon=1;
 	} 
  
 }
