@@ -5,10 +5,13 @@ button.onclick = function() {
     if(gallery.className.valueOf() === "gallery-pic animation gallery".valueOf()) {
         gallery.classList.add('gallery-open');
         gallery.classList.remove('gallery');
-        button.innerHTML = "Pokaż mniej"
+        button.innerHTML = "Pokaż mniej";
     } else {
         gallery.classList.add('gallery');
         gallery.classList.remove('gallery-open');
-        button.innerHTML = "Pokaż wiecej"
-    }
+        button.innerHTML = "Pokaż wiecej";
+    };
+    
+    showBtnFn();
+    
 };

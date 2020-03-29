@@ -9,6 +9,11 @@ const othersBtn = document.getElementById("others-btn");
 const galleryPic = document.getElementById('gallery');
 const pictures = galleryPic.querySelectorAll('.pic-box');
 
+function showLess() {
+    gallery.classList.add('gallery');
+    gallery.classList.remove('gallery-open');
+    button.innerHTML = "Pokaż wiecej";
+}
 
 logoBtn.onclick = function() {
 for (const picture of pictures) {
@@ -17,7 +22,10 @@ for (const picture of pictures) {
     } else {
         picture.classList.add('hidden');
     };
-};
+    
+    };
+    showLess();
+    showBtnFn();
 };
 
 posterBtn.onclick = function() {
@@ -27,7 +35,10 @@ posterBtn.onclick = function() {
         } else {
             picture.classList.add('hidden');
         };
+        
     };
+    showLess();
+    showBtnFn();
 };
 
 visitingCardBtn.onclick = function() {
@@ -37,7 +48,10 @@ visitingCardBtn.onclick = function() {
         } else {
             picture.classList.add('hidden');
         };
+        
     };
+    showLess();
+    showBtnFn();
 };
 
 leafletBtn.onclick = function() {
@@ -47,7 +61,10 @@ leafletBtn.onclick = function() {
         } else {
             picture.classList.add('hidden');
         };
+        
     };
+    showLess();
+    showBtnFn();
 };
 
 othersBtn.onclick = function() {
@@ -57,12 +74,17 @@ othersBtn.onclick = function() {
         } else {
             picture.classList.add('hidden');
         };
+        
     };
+    showLess();
+    showBtnFn();
 };
 
 allBtn.onclick = function() {
     for (const picture of pictures) {
         picture.classList.remove('hidden');
     };
+    showBtnFn();
+    showLess();
 };
 
