@@ -18,7 +18,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/smothscroll.js"></script>
-        <script src="js/icons.js"></script>
         <script src="https://unpkg.com/scrollreveal"></script>
        
         </META>
@@ -26,10 +25,10 @@
     
     <body>
     
-    <header class="navi-bar position-relative">
+    <header class="navi-bar">
        <div class="container">
         <!--Navbar-->
-        <nav class="navbar navbar-dark fixed-top navbg">
+           <nav class="navbar navbar-dark fixed-top navbg">
 
           <!-- Navbar brand -->
             <a class="navbar-brand " href="#home">
@@ -37,16 +36,15 @@
             </a>
 
           <!-- Collapse button -->
-          <button class="navbar-toggler " type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent41" aria-controls="navbarToggleExternalContent" aria-expanded="false"
-            aria-label="Toggle navigation"><span class="navbar-toggler-icon sticky-top "></span></button>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent41" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+            aria-label="Toggle navigation" id="navbtn"><span class="navbar-toggler-icon sticky-top "></span></button>
 
           <!-- Collapsible content -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent41">
 
             <!-- Links -->
-              <ul class="navbar-nav py-3 px-4 float-right text-right">
-                <li class="nav-item active">
+              <ul class="navbar-nav py-3 px-4 float-right text-right" id="menu-elements">
+                <li class="nav-item">
                     <a class="nav-link link" href="#home">Start</a>
                 </li>
                 <li class="nav-item">
@@ -90,10 +88,10 @@
             <div class="row py-4  project-pic animation">
             <a href="https://dstaary.github.io/portfolio.github.io/"
                class="col-md px-5 d-flex align-items-center" target="_blank" >
-                <img src="img/portfolio.png" alt="" class="lightbox">
+                <img src="img/portfolio.png" alt="portfolio" class="lightbox">
             </a>
             <div class="col-md py-3 animation">
-                <h1 class="display-4">Portfolio</h1>
+                <h2 class="display-4">Portfolio</h2>
                 <p class="lead py-4">Strona z moim portfolio wykonana za pomocą HTML, CSS, Bootstrap oraz JS.</p>
                 <div class="row d-flex py-3">
                     <div class="d-flex px-3 animation">
@@ -161,73 +159,73 @@
                 <div class="gallery-pic animation gallery" id="gallery">
                     <div class="col-sm-4 pic-box" id="gallery-other">
                           <a href="https://i.imgur.com/syLsT05.jpg" data-size="1600x1067" class="lightbox" >
-                              <img src="https://i.imgur.com/syLsT05.jpg">
+                              <img src="https://i.imgur.com/syLsT05.jpg" alt="banner_wosp">
                             </a>
                       </div>
                     <div class="col-sm-4 pic-box" id="gallery-card">
                             <a href="https://i.imgur.com/K42u2BN.jpg" data-size="1600x1067" class="lightbox">
-                                <img src="https://i.imgur.com/K42u2BN.jpg">
+                                <img src="https://i.imgur.com/K42u2BN.jpg" alt="wizytowka_best">
                             </a>
                     </div>
                     
                     <div class="col-sm-4 pic-box" id="gallery-other">
                           <a href="https://i.imgur.com/v8HChyX.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/v8HChyX.jpg">
+                              <img src="https://i.imgur.com/v8HChyX.jpg" alt="pakiet-it_kk">
                             </a>
                       </div>
                     <span id="show"></span>
                     <div class="col-sm-4 pic-box" id="gallery-leaflet">
                           <a href="https://i.imgur.com/PlbPlWH.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/PlbPlWH.jpg" >
+                              <img src="https://i.imgur.com/PlbPlWH.jpg" alt="ulotka_it_kk">
                             </a>
                       </div>
                     <div class="col-sm-4 pic-box" id="gallery-poster">
                         <a href="https://i.imgur.com/Qj4NXHD.jpg" data-size="1600x1067" class="lightbox">
-                            <img src="https://i.imgur.com/Qj4NXHD.jpg">
+                            <img src="https://i.imgur.com/Qj4NXHD.jpg" 
+                            alt="plakat_wosp">
                         </a>
                       </div>
                     <div class="col-sm-4 pic-box" id="gallery-card">
                           <a href="https://i.imgur.com/vdlYRV0.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/vdlYRV0.jpg">
+                              <img src="https://i.imgur.com/vdlYRV0.jpg" alt="wizytowki_it_kk">
                             </a>
                       </div>
                     
                     <div class="col-sm-4 pic-box" id="gallery-card">
                           <a href="https://i.imgur.com/bQJfgHp.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/bQJfgHp.jpg">
+                              <img src="https://i.imgur.com/bQJfgHp.jpg" alt="wizytowki_gardens">
                             </a>
                       </div>
                     <div class="col-sm-4 pic-box" id="gallery-card">
                           <a href="https://i.imgur.com/07dflI9.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/07dflI9.jpg">
+                              <img src="https://i.imgur.com/07dflI9.jpg" alt="wizytowki_pelinko">
                             </a>
                       </div>
                     <div class="col-sm-4 pic-box" id="gallery-card">
                           <a href="https://i.imgur.com/77SEs7i.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/77SEs7i.jpg">
+                              <img src="https://i.imgur.com/77SEs7i.jpg" alt="wizytowki_budmet">
                             </a>
                       </div>
                     <div class="col-sm-4 pic-box" id="gallery-poster">
                           <a href="https://i.imgur.com/KYy74BQ.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/KYy74BQ.jpg">
+                              <img src="https://i.imgur.com/KYy74BQ.jpg" alt="plakat_onkogranty">
                             </a>
                       </div>
                     <div class="col-sm-4 pic-box" id="gallery-leaflet">
                           <a href="https://i.imgur.com/1XO5WyD.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/1XO5WyD.jpg">
+                              <img src="https://i.imgur.com/1XO5WyD.jpg" alt="ulotki_janek">
                             </a>
                       </div>
                     <div class="col-sm-4 pic-box" id="gallery-logo">
                           <a href="https://i.imgur.com/rsfV1p3.png" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/rsfV1p3.png">
+                              <img src="https://i.imgur.com/rsfV1p3.png" alt="logo_pieke_upiecie">
                             </a>
-                      </div>
-         
+                      </div>      
               </div>
              
             </div>
-            <div class="animation text-center">
-                <a href="#show"><span class="show-more" id="show-more">Pokaż wiecej</span></a>
+            <div class="animation text-center btn-show show-more" id="showbtn">
+                <a href="#show"><span id="show-more">Pokaż wiecej</span></a>
             </div>
             </div>
         </article>
@@ -238,11 +236,11 @@
                     <h1>O mnie</h1>
                 </div>
             
-                <p class="about-text animation">Przede wszystkim - jestem <b>Front-End Developerem</b>, a także <b>Grafikiem komputerowym</b>.
+                <p class="about-text animation">Przede wszystkim - jestem <b>Front-End Developerem</b>, a także <b>Grafik komputerowym</b>.
                 Ponadto, posługuję się <b>językiem angielskim</b> na poziomie podstawowym w mowie i piśmie.
-                Biegle posługuję się programami <b>Adobe Photoshop</b>,  <b>Adobe Illustrator</b>. 
+                Biegle posługuję się programami <b>Adobe Photoshop</b> oraz <b>Adobe Illustrator</b>. 
                 Pracowałem na różnych systemach operacyjnych, obecnie pozostając wierny Win 10.
-                Sprawnie poruszam się między wierszami  <b>HTML</b>,  <b>CSS</b> oraz <b>JS</b> umiejętnie je modyfikując.
+                Sprawnie poruszam się między wierszami  <b>HTML</b> i <b>CSS</b>, umiejętnie je modyfikując.
                  W ostatnim czasie posiadłem umiejętność pracy z  <b>Bootstrapem</b> i  <b>JavaScript</b>.
                 Jeżeli masz pytania lub chcesz nawiązać współpracę zapraszam do <a href="#contact" class="link" >kontaktu</a>.</p>
             
@@ -258,14 +256,7 @@
                     <div class="col-sm-3 py-4 text-center icons animation">
                        
                         <img src="img/ai.svg" alt="" id="change" style="height: 130px;">
-                        
-                        
-                        <!-- skrypt zmiana obrazków
-                        <i class="fab fa-html5 fa-8x"></i>
-                        <i class="fab fa-css3-alt fa-8x"></i>
-                        <i class="fab fa-js fa-8x"></i>
-                         -->
-                                 
+                                        
                     </div>
                     <div class="col-sm-2 py-4 text-center animation">
                         <span class="years"><b>3+</b></span>
@@ -290,7 +281,7 @@
                     <div class="row d-flex flex-wrap py-3">
                         <div class="col-md-6 animation">
                            
-                            <h1 class="text-center adress">Napisz do mnie</h1>
+                            <h2 class="text-center adress">Napisz do mnie</h2>
                             
                             
                             <form>
@@ -301,12 +292,12 @@
 
                                 <div class="form-group animation">
                                     <label for="name"></label>
-                                    <input name="name" type="name" class="form-control" id="name" placeholder="Name">
+                                    <input name="name" type="name" class="form-control" id="name" placeholder="Imie">
                                 </div>
 
                                 <div class="form-group animation">
                                     <label for="subject"></label>
-                                    <input name="subject" type="subject" class="form-control" id="subject" placeholder="subject">
+                                    <input name="subject" type="subject" class="form-control" id="subject" placeholder="Temat">
                                 </div>
 
                                 <div class="form-group animation">
@@ -353,6 +344,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js">
+            
         </script><script>
             baguetteBox.run('.gallery');
         </script>
@@ -360,7 +352,9 @@
             ScrollReveal().reveal('.animation');
             ScrollReveal().reveal('.animation', { delay: 250 })
         </script>
-
+        
+        <script src="js/menulist.js"></script>
+        <script src="js/showbtn.js"></script>
         <script src="js/icons.js"></script>
         <script src="js/typer.js"></script>
         <script src="js/show-gallery.js"></script>
