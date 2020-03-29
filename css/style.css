@@ -1,11 +1,12 @@
 body, html {
     height: 100%;
     color: white;
-    background: #221f1f;
+    background: #0a0b1a;
+    z-index: 2;
 }
 
 .home-section {
-    background: linear-gradient(black,  #221f1f);
+    background: linear-gradient(black,  #0a0b1a);
 }
 
 .container {
@@ -40,9 +41,11 @@ body, html {
 }
 
 /* nav header slogan*/
+.navbg {
+    z-index: 0;
+}
 
 .navbar {
-    overflow: hidden;
     position: fixed;
     top: 0;
 }
@@ -95,9 +98,13 @@ body, html {
 
 
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1440px) { 
+    body, html {
+        z-index: 0;
+    }
     .navbg {
         background: rgb(52, 58, 64, 0.8);
+        z-index: 0;
     }
     
 }
@@ -140,8 +147,8 @@ body, html {
 
 .front-title h1 {
     color: #0072ce;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
+    font-family: 'Roboto', cursive;
+    font-size: 40px;
 }
 
 /* gallery section */
@@ -151,9 +158,6 @@ body, html {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    
-    -webkit-box-shadow: inset 0px -50px 10px -10px #221f1f; 
-    box-shadow: inset 0px -50px 10px -10px #221f1f;
     
     -webkit-transition: max-height 0.7s;
     -moz-transition: max-height 0.7s;
@@ -207,12 +211,17 @@ body, html {
 }
 
 .show-more {
+    display: none;
     cursor: pointer;
     color: #0072ce;
     border: 1px solid #383838;
     padding: 5px 20% ;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
+}
+
+.btn-show {
+    display: block;
 }
 
 .hidden {
@@ -222,6 +231,8 @@ body, html {
 .baguetteBox-button {
     background-color: transparent !important;
 }
+
+
 
 
 
@@ -289,7 +300,6 @@ footer p {
 
 .contact-section {
     padding: 100px 0;
-    background: #221f1f;
 }
 
 .adress {
