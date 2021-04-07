@@ -1,61 +1,43 @@
-(function($) {
-	var aiMsg = ["Front-end Developerem", "DTP Designerem", "Freelancerem"];
+const spnText = document.querySelector('.typer');
+const spnCursor = document.querySelector('.cursor');
+const txt = ['Front-end developer', 'DTP Designer', 'Freelancer']
 
-	$(document).ready(function() {
-		var inputAI = $("#typer");
-		
-		aiMSGLoop(aiMsg);
-		function aiMSGLoop(wordArray) {
-			// store new element so AI knows where to write
-			var newElement = $("<h3></h3>").appendTo(inputAI);
-			var rand = Math.round(Math.random() * (wordArray.length-1)+ 0);
-			//my type writer uses object function so no need to code 
-			//long function every time
-			newElement.writeText(wordArray[rand]).then(function() {
-				setTimeout(function(){ 
-					newElement
-					.removeText(wordArray[rand])
-					.then(function() {
-					aiMSGLoop(wordArray);
-						
-				});
-					 }, 2500);
-			});
-		}
-	});
-	//AI Text typer
-	$.fn.writeText = function(content) {
-		var elem = this;
-		elem.addClass("typewriter");
-		return new Promise(function(resolve, reject) {
-			var contentArray = content.split(""),
-				current = 0;
-			var rand = 90;
-			setInterval(function() {
-				rand = Math.round(Math.random() * (300 + 1050));
-				if (current < contentArray.length) {
-					elem.text(elem.text() + contentArray[current++]);
-				} else {
-					resolve();
-				}
-			}, rand);
-		});
-	};
-	//AI Text Typer backspace
-	$.fn.removeText = function(content) {
-		var elem = this;
-		return new Promise(function(resolve, reject) {
-			var contentArray = content.split("");
-			var current = 0;
-			setInterval(function() {
-				if (current < contentArray.length) {
-					elem.text(elem.text().slice(0, -1));
-					current++;
-				} else {
-					elem.remove();
-					resolve();
-				}
-			}, 70);
-		});
-	};
-})(jQuery);
+let activeLetter = -15;
+let activeText = 0;
+
+// Implementacja
+const addLetter = () => {
+if (activeLetter >= 0) {
+    spnText.textContent += txt[activeText][activeLetter];
+ 
+}
+ activeLetter++;
+if(activeLetter === txt[activeText].length) {
+    if (0 <= activeLetter) {
+        setTimeout(() => {
+            spnText.classList.add('mark');
+        }, 2000)
+    }
+    activeText++;
+    if (activeText === txt.length) activeText = 0;
+
+    return setTimeout(() => {
+        activeLetter = -15;
+        spnText.textContent = '';
+        spnText.classList.remove('mark');
+        addLetter();
+    }, 4000)
+}
+ setTimeout(addLetter, 100)
+
+}
+
+
+addLetter(); //pierwsze wywołanie
+
+
+// Animacja kursora 
+const cursorAnimation = () => {
+ spnCursor.classList.toggle('active');
+}
+setInterval(cursorAnimation, 400);

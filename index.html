@@ -40,7 +40,7 @@
             aria-label="Toggle navigation" id="navbtn"><span class="navbar-toggler-icon sticky-top "></span></button>
 
           <!-- Collapsible content -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent41">
+          <div class="navbar-collapse collapse" id="navbarSupportedContent41">
 
             <!-- Links -->
               <ul class="navbar-nav py-3 px-4 float-right text-right" id="menu-elements">
@@ -54,10 +54,10 @@
                     <a class="nav-link link" href="#graphic">Graphic-Design</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link" href="#about">O mnie</a>
+                    <a class="nav-link link" href="#about">About me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link" href="#contact">Kontakt</a>
+                    <a class="nav-link link" href="#contact">Contact</a>
                 </li>
             </ul>
             <!-- Links -->
@@ -71,28 +71,28 @@
     <section class="home-section text-light" id="home">
         <div class="container text-center">
             <div class="slogan animation">
-                <h1 >Witaj, <span class="font-weight-light">jestem</span></h1>
+                <h1 >Hello, <span class="font-weight-light">I am</span></h1>
                 
-                <span id="typer"></span>
+                <span class="typer"></span><span class="cursor">_</span>
                 
             </div>
         </div>
     </section>
     
-    <article id="front" class="py-5">
+    <article id="front" class="py-5 project-section">
         <div class="container text-light">
             <div class="front-title text-uppercase animation">
-                <h1>Projekty Front-end Dev</h1>
+                <h1>Front-end Dev projects</h1>
             </div>
         
-            <div class="row py-4  project-pic animation">
+          <div class="row py-5 project-pic animation">
             <a href="https://dstaary.github.io/portfolio.github.io/"
-               class="col-md px-5 d-flex align-items-center" target="_blank" >
-                <img src="img/portfolio.png" alt="portfolio" class="lightbox">
+               class="col-md px-4 d-flex align-items-center" target="_blank" >
+                <img src="img/portfolio.png" alt="portfolio">
             </a>
             <div class="col-md py-3 animation">
                 <h2 class="display-4">Portfolio</h2>
-                <p class="lead py-4">Strona z moim portfolio wykonana za pomocą HTML, CSS, Bootstrap oraz JS.</p>
+                <p class="lead py-4">A website created by me from scratch in order to show my work done so far in the direction of frontend and graphic designs. Website made of HTML, CSS, Bootstrap and JS.</p>
                 <div class="row d-flex py-3">
                     <div class="d-flex px-3 animation">
                         <a class="text-primary link" target="_blank" href="https://github.com/Dstaary/portfolio.github.io" role="button" ><i class="fab fa-github"></i> GitHub</a>
@@ -103,15 +103,16 @@
                     </div>
                 </div>
             </div>
-                
-            <div class="row py-4  project-pic animation">
+          </div>
+            <!-- ---------------------------------------- -->
+          <div class="row py-5 project-pic animation">
                 <a href="https://dstaary.github.io/webapps.github.io/"
-                   class="col-md px-5 d-flex align-items-center" target="_blank" >
-                    <img src="img/webapp.png" alt="portfolio" class="lightbox">
+                   class="col-md px-4 d-flex align-items-center" target="_blank" >
+                    <img src="img/webapp.png" alt="portfolio">
                 </a>
                 <div class="col-md py-3 animation">
                     <h2 class="display-4">Web Apps</h2>
-                    <p class="lead py-4">Strona z prostymi aplikacjami wykonanymi za pomocą JS</p>
+                    <p class="lead py-4">It is a simple website that I created myself. It has four simple web applications: fuel costs, todo, draw and notes. I used HTML, CSS and JS for the project. Website created to learn JS</p>
                     <div class="row d-flex py-3">
                         <div class="d-flex px-3 animation">
                             <a class="text-primary link" target="_blank" href="https://github.com/Dstaary/webapps.github.io" role="button" ><i class="fab fa-github"></i> GitHub</a>
@@ -122,54 +123,38 @@
                         </div>
                     </div>
                 </div>
+          </div>
+                <!-- --------------------------------------- -->
         </div>
         
-        <!--<div class="row py-4  project-pic">
-            <a href="" class="col-md px-5 d-flex align-items-center">
-                <img src="img/Web%201920%20%E2%80%93%201.png" alt="" class="lightbox">
-            </a>
-            <div class="col-md py-3">
-                <h1 class="display-4">Aplikacje</h1>
-                <p class="lead py-4">Stronka która posiada różnego rodzaju aplikacje wykonane przy pomocy JS, które mogą być przydatne w codzinnym życiu.</p>
-                
-                <div class="row d-flex py-3">
-                    <div class="d-flex px-3">
-                        <a class="text-primary link" href="#" role="button" style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
-                    </div>
-                    <div class="d-flex px-3">
-                        <a class="text-primary link" href="#" role="button" style="text-decoration: none;"><i class="fas fa-globe"></i> Online</a>
-                    </div>
-                </div>
-            </div>
-        </div>-->
         </div>
     </article>
     
-        <article class="py-5 headline" id="graphic">
+        <article class="py-5 headline gallery-section" id="graphic">
         <div class="container text-light ">
             <div class="front-title text-uppercase animation">
-                <h1>Projekty Graphic Design</h1>
+                <h1>Graphic Design projects</h1>
             </div>
             
             
             <div class="row justify-content-center animation py-3">
                 <div class="px-2 py-2">
-                    <button class="btn btn-primary" id="all-btn" >Wszystko</button>
+                    <button class="btn btn-primary" id="all-btn" >All</button>
                 </div>
                 <div class="px-2 py-2">
-                    <button class="btn btn-primary" id="logo-btn">Loga</button>
+                    <button class="btn btn-primary" id="logo-btn">Logo</button>
                 </div>
                 <div class="px-2 py-2">
-                    <button class="btn btn-primary" id="poster-btn" >Plakaty</button>
+                    <button class="btn btn-primary" id="poster-btn" >Posters</button>
                 </div>
                 <div class="px-2 py-2">
-                    <button class="btn btn-primary" id="visiting-card-btn" >Wizytówki</button>
+                    <button class="btn btn-primary" id="visiting-card-btn" >Visiting cards</button>
                 </div>
                 <div class="px-2 py-2">
-                    <button class="btn btn-primary" id="leaflet-btn">Ulotki</button>
+                    <button class="btn btn-primary" id="leaflet-btn">Leaflet</button>
                 </div>
                 <div class="px-2 py-2">
-                    <button class="btn btn-primary" id="others-btn">Inne</button>
+                    <button class="btn btn-primary" id="others-btn">Other</button>
                 </div>
             </div>
             
@@ -284,28 +269,12 @@
                           <a href="https://i.imgur.com/rsfV1p3.png" data-size="1600x1067" class="lightbox">
                               <img src="https://i.imgur.com/rsfV1p3.png" alt="logo_pieke_upiecie">
                             </a>
-                      </div>  
-
-                    <div class="col-sm-4 pic-box" id="gallery-logo">
-                          <a href="https://i.imgur.com/Ar3bTFE.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/Ar3bTFE.jpg" alt="it_kamil">
-                            </a>
-                      </div>
-                    <div class="col-sm-4 pic-box" id="gallery-logo">
-                          <a href="https://i.imgur.com/fyLiUn7.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/fyLiUn7.jpg" alt="logo_mik_furniture">
-                            </a>
-                      </div> 
-                    <div class="col-sm-4 pic-box" id="gallery-leaflet">
-                          <a href="https://i.imgur.com/1ivhCma.jpg" data-size="1600x1067" class="lightbox">
-                              <img src="https://i.imgur.com/1ivhCma.jpg" alt="ulotka_procent">
-                            </a>
-                      </div>
+                      </div>      
               </div>
              
             </div>
             <div class="animation text-center btn-show show-more" id="showbtn">
-                <a href="#show"><span id="show-more">Pokaż wiecej</span></a>
+                <a href="#show"><span id="show-more">Show more...</span></a>
             </div>
             </div>
         </article>
@@ -313,24 +282,23 @@
         <article class="about-section" id="about">
             <div class="container text-light animation">
                 <div class="front-title text-uppercase animation">
-                    <h1>O mnie</h1>
+                    <h1>About me</h1>
                 </div>
             
-                <p class="about-text animation">Przede wszystkim - jestem <b>Front-End Developerem</b>, a także <b>Grafik komputerowym</b>.
-                Ponadto, posługuję się <b>językiem angielskim</b> na poziomie podstawowym w mowie i piśmie.
-                Biegle posługuję się programami <b>Adobe Photoshop</b> oraz <b>Adobe Illustrator</b>. 
-                Pracowałem na różnych systemach operacyjnych, obecnie pozostając wierny Win 10.
-                Sprawnie poruszam się między wierszami  <b>HTML</b>, <b>JavaScript</b> i <b>CSS</b>, umiejętnie je modyfikując.
-                Jeżeli masz pytania lub chcesz nawiązać współpracę zapraszam do <a href="#contact" class="link" >kontaktu</a>.</p>
+                <p class="about-text animation">A designer, front-end dev and freelancer. For a long time I have been creating graphic designs using Adobre Photoshop, Illustrator and InDesign.
+                  For a year now, I have been creating non-commercial projects using
+                  technologies such as HTML, CSS, and JS. Additionally, I started an
+                  introductory course on React technology.
+                  If you have questions or want to make some inquiries, please feel free to <a href="#contact" class="link" >contact me </a>.</p>
             
                 <div class="row justify-content-center experience animation">
                     <div class="col-sm-2 py-4 text-center animation">
                         <span class="years"><b>1+</b></span>
-                        <p>Lata doświadczenia Front-End Dev</p>
+                        <p>Experience in Front-End Dev</p>
                     </div>
                     <div class="col-sm-2 py-4 text-center animation">
                         <span class="years"><b>10+</b></span>
-                        <p>Projektów</p>
+                        <p>Projects</p>
                     </div>
                     <div class="col-sm-3 py-4 text-center icons animation">
                        
@@ -339,11 +307,11 @@
                     </div>
                     <div class="col-sm-2 py-4 text-center animation">
                         <span class="years"><b>3+</b></span>
-                        <p>Lata doświadczenia Graphic Design</p>
+                        <p>Experience in Graphic Design</p>
                     </div>
                     <div class="col-sm-2 py-4 text-center animation">
                         <span class="years"><b>50+</b></span>
-                        <p>projektów</p>
+                        <p>Projects</p>
                     </div>
                 </div>
             
@@ -355,42 +323,16 @@
         <section class="contact-section animation" id="contact">
                 <div class="container text-light">
                     <div class="front-title text-uppercase ">
-                        <h1>Kontakt</h1>
+                        <h1>Contact me</h1>
                     </div>
                     <div class="row d-flex flex-wrap py-3">
                         <div class="col-md-6 animation">
-                           
-                            <h2 class="text-center adress">Napisz do mnie</h2>
                             
+                            <p class="about-text animation"></p>If you have more questions or want to hire me in your company, please write to 
+                            <a href="mailto: starobratd@gmail.com" class="link">starobratd@gmail.com</a> I'm waiting for your message!</p>
+
                             
-                            <form>
-                                <div class="form-group animation">
-                                    <label for="email"></label>
-                                    <input  name="email" type="email" class="form-control" id="email" placeholder="E-mail">
-                                </div>
-
-                                <div class="form-group animation">
-                                    <label for="name"></label>
-                                    <input name="name" type="name" class="form-control" id="name" placeholder="Imie">
-                                </div>
-
-                                <div class="form-group animation">
-                                    <label for="subject"></label>
-                                    <input name="subject" type="subject" class="form-control" id="subject" placeholder="Temat">
-                                </div>
-
-                                <div class="form-group animation">
-                                    <label for="exampleFormControlTextarea1"></label>
-                                    <textarea name="message" class="form-control" id="text" rows="3" placeholder="Wiadomość"></textarea>
-                                </div>
-                                <div class="text-center py-3 animation">
-                                    <button class="btn btn-primary">Wyślij</button>
-                                </div>
-                            </form>
-                            <p class="text-center animation"><i class="fas fa-envelope"></i>
-                                    <a href="mailto: starobratd@gmail.com" class="link">starobratd@gmail.com</a></p>
-                            <p class="text-center animation"><i class="fa fa-phone" aria-hidden="true"></i>
-                                    +48 883 144 238</p>
+                             
                         </div> 
                         
                         <div class="col-md-6 animation">

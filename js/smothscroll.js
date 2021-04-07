@@ -13,7 +13,7 @@ $(document).ready(function(){
               // Opcjonalna liczba (800) określa liczbę milisekund potrzebnych do przewinięcia do określonego obszaru
               $('html, body').animate({
                 scrollTop: $(hash).offset().top
-              }, 1000, function(){
+              }, 250, function(){
 
                 window.location.hash = hash;
               });
