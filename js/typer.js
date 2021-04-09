@@ -1,6 +1,6 @@
 const spnText = document.querySelector('.typer');
 const spnCursor = document.querySelector('.cursor');
-const txt = ['Front-end developer', 'DTP Designer', 'Freelancer']
+const txt = ['Junior Front-end Developer', 'Graphic Designer Freelancer']
 
 let activeLetter = -15;
 let activeText = 0;
